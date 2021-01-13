@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/js/all.min.js"></script>
+
+</head>
+<style>
+    .fa-stack[data-count]:after{
+    position:absolute;
+    right:18%;
+    top:15%;
+    content: attr(data-count);
+    font-size:30%;
+    padding:.6em;
+    border-radius:1000px;
+    line-height:.99em;
+    color: white;
+    background:rgba(255,0,0,.85);
+    text-align:center;
+    min-width:0em;
+    font-weight:bold;
+  }
+</style>
+
+<body>
+
+    <div class="container">
+        <h2>Alerts Example</h2>
+        <!-- Button to Open the Modal -->
+        <span id="group">
+            <span class="fa-stack fa-2x" data-count="28" data-toggle="modal" data-target="#myModal" >
+                <i class="far fa-bell fa-stack-1x"></i>
+            </span>
+        </span>
+
+        <!-- The Modal -->
+        <div class="modal" id="myModal">
+            <div class="modal-dialog">
+                <div class="modal-content">
+
+                    <!-- Modal Header -->
+                    <div class="modal-header">
+                        <div>
+                            <span><i class="far fa-bell fa-2x"></i></span>
+                        </div>
+                        <h4 class="modal-title" style="float: right;">Alert</h4>
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+
+                    <!-- Modal body -->
+                    <div class="modal-body">
+                        <section id="tabs" class="project-tab">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <nav>
+                                            <div class="nav nav-tabs nav-fill" id="nav-tab" role="tablist">
+                                                <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home"
+                                                    aria-selected="true">Drafts</a>
+                                                <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile"
+                                                    aria-selected="false">Notifications</a>
+                                            </div>
+                                        </nav>
+                                        <div class="tab-content" id="nav-tabContent">
+                                            <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+
+                                            </div>
+                                            <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+                                                <table class="table" cellspacing="0">
+                                                    <thead>
+                                                        <tr>
+                                                            <th>Project Name</th>
+                                                            <th>Employer</th>
+                                                            <th>Time</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td><a href="#">Work 1</a></td>
+                                                            <td>Doe</td>
+                                                            <td>john@example.com</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td><a href="#">Work 2</a></td>
+                                                            <td>Moe</td>
+                                                            <td>mary@example.com</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td><a href="#">Work 3</a></td>
+                                                            <td>Dooley</td>
+                                                            <td>july@example.com</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+
+                    <!-- Modal footer
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-dismiss="modal">Save</button>
+        </div>
+         -->
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
